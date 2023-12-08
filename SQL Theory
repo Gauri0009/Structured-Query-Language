@@ -1,0 +1,51 @@
+DATABASE
+
+
+# DATA is a RAWFACT that describes ATTRIBUTES of the ENTITY —— (where rawfact is real fact, attributes are properties and entity is object.)
+# which is stored in a 1) SYSTEMATIC and 2) ORGANIZED manner into the CONTAINER called DATABASE.
+#to create DB, use DB operations (Create, Read, Update, Delete) also k/as CRUD operations
+#  to manage that DB, we’ve DBMS which is a s/w used to maintain and manage the DB.
+# to COMMUNICATE with these DBMS, there is QUERY LANGUAGE.
+# TYPES OF DBMS:- 1) OBJECT ORIENTED, 2) NETWORK, 3) RELATIONAL, 4) HIERARCHICAL.
+
+#RELATIONAL DBMS:- s/w used to MAINTAIN, MANAGE & store the data in terms of TABLES.
+    to communicate with RDBMS, use STRUCTURED QUERY Language.
+    CHARACTERISTICS:- 1)If DBMS follows relational modeL   2)If DBMS follows E. F. CODD RULE
+    RELATIONAL MODEL:- 1)model given by E.F.CODD 2)data can be stored in the form of TABLES 3)tables can be stored in the form of METADATA.
+    
+     $ E. F. CODD RULE:- 1)ATOMIC DATA should be entered into cell 
+                                        2)data stored in multiple tables & can established connection bet them by KEY ATTRIBUTE 
+                                        3)to validate, use DT(mandatory) & CONSTRAINTS(optional)
+
+     $ DT:- type of data used to store into the MEMORY
+                TYPES:- 1) CHAR-used when length is fixed; imb=fmb,FIXED LENGTH MEMORY ALLOCATION (2000 MB)
+                               2)VARCHAR-used when length is not fixed; imb!= fmb, VARIABLE LENGTH MEMORY ALLOCATION; unused MB resends to MA(2000MB), VARCHAR2- updated version of varchar(4000MB)
+                               3) LARGE OBJECTS- used to store large amt of data.
+                                                                  i)charLO- used when large amt of characters need to be stored(4GB)  
+                                                                  ii)binaryLO- used when data like audio, video, numeric, doc, ing needs to be stored but only after converting them into binary values.
+                               4)DATE- used when data needs to be stored by DATE; A/C ORACLE’S std format, use a) DD-MON-YY (present), b) DD-MON-YYYY(past, future)
+                               5)NUMBER- used when data needs to get stored in PRECISION & DECIMAL format; precision is mandatory with limit 1-38 while decimal is completely optional with limit 0-127
+     $ CONSTRAINTS:- EXTRA CONDITON put on to validate the data.
+                                     TYPES:- 1)UNIQUE- used to AVOID DUPLICACY of data while entering into cell. DISTINCT-used to fetch UNIQUE data only
+                                                    2)NOT NULL- there should be SOME VALUE in cell; NULL-nothing in the cell 
+                                                    3)CHECK- EXTRA ONE MORE CONDITION put on to validate 
+                                                    4)PRIMARY KEY- identifies the rows UNIQUELY.
+                                                                                 CHARACTERISTICS:- 1)U, NN & U+NN 2)only 1 pk 3)pk represents TABLE 4)in parent table
+                                                    5)FOREIGN KEY- makes connection from 1 table to another one.
+                                                                                 CHARACTERISTICS:- 1)U, NN & not U+NN 2)multiple FK in table  3)also k/as RIC 4)in child table 5)PK of 1 table = FK of other table
+
+#MISLANEOUS:- 1) ASTRISK(*)—----> used to display all the data
+                             2)EXPRESSION——> by 2 or more operands & operator performing some operation so that we can get some o/p
+                             3)ALIAS —————> ALTERNATE NAME given to the expression or col
+
+                                                    
+#OBECTS OF SQL:-    1)DDL (Create, Rename, Alter, Drop, Truncate) 
+                                     2)DML (Insert, Update, Delete)  
+                                     3)TCL (Commit, Rollback, Savepoint) 
+                                     4)DCL (Grant, Revoke) 
+                                     5)DQL (Select, Projection, Selection, Joins)
+                                                  SELECT          (retrieves data from table present into DB)                                      :- has FROM clause—--—> GOES TO DB, SEARCH FOR THE TABLE AND PUT IT INTO EXECUTION AREA
+                                                  PROJECTION (retrieves data from table present in EA by colName)                     :- has SELECT clause——> GOES TO THE EA, SEARCH FOR THE COL NAME AND DISPLAY THE O/P
+                                                  SELECTION    (retrieves data from table present in EA by colName & rowName) :- has WHERE clause——> GOES TO THE EA, SEARCH FOR THE COL NAME & FILTERS CONDTION ROW BY ROW.
+                                                  JOIN               (retrieves data from multiple table parallely)                                    :-
+
