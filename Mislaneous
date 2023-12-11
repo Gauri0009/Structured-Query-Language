@@ -1,8 +1,11 @@
-Operators:-
+gauriOperators:-
 1)Arithmetic-----> / * + -
 2)Relational-----> < > = !=
 3)Comparision----> < > <= >=
 4)Concatenation--> ||
-5)Special opr----> In Not In, Between Not Between, Like Not Like, Is Is Not
+5)Special opr----> In-Not In, Between-Not Between, Like-Not Like, Is-Is Not
 6)Sub-query-------> All, Any, Exists, Not Exists
 7)Logical--------> AND, OR
+
+Special Operator:-
+In-----> It is a multi-value operator on whose LHS, there is one value only and on RHS there are multiple values.
